@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { AiOutlineLike } from "@react-icons/all-files/ai/AiOutlineLike";
+// import { AiOutlineLike } from "@react-icons/all-files/ai/AiOutlineLike";
 
 const Api = ({searchTerm,setSearchTerm}) => {
 
@@ -19,7 +19,7 @@ const Api = ({searchTerm,setSearchTerm}) => {
         {
           apiData.filter((val)=>{
             if(searchTerm === ""){
-              return val
+              return val;
             }else if(val.user.username.toLowerCase().includes(searchTerm.toLowerCase())){
               return val;
             }
@@ -45,7 +45,7 @@ const Api = ({searchTerm,setSearchTerm}) => {
             <div className='main-image-div'>
               <div><img className='gallery-image' src = {val.urls.full}/></div>
               <div className='profile-div'>
-                <img src = {val.user.profile_image.small} id='profile'/>
+                <img  src = {val.user.profile_image.small} id='profile'/>
                 <div className='name-div'>
                   <h4>{val.user.first_name}</h4>
                   <p>@{val.user.instagram_username}</p>

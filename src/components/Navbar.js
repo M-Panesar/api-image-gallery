@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { AiOutlineSearch } from "@react-icons/all-files/ai/AiOutlineSearch";
+// import { AiOutlineSearch } from "@react-icons/all-files/ai/AiOutlineSearch";
 
 const Navbar = ({searchTerm,setSearchTerm}) => {
 
@@ -18,7 +18,7 @@ const Navbar = ({searchTerm,setSearchTerm}) => {
     return (
         <div className='Navbar'>
             <div className='logo'>
-                <h1>Image Gallery</h1>
+                <h2>Image Gallery</h2>
             </div>
             <div className='SearchBar'>
                 {/* <AiOutlineSearch /> */}
